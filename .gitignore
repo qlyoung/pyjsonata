@@ -1,0 +1,8 @@
+__pycache__
+.pytest_cache
+*.o
+*.so
+.clang-format
+.ccls-cache
+node_modules
+package-lock.json

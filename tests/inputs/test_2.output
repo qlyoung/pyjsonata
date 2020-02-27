@@ -1,0 +1,20 @@
+{
+  "Bowler Hat": [
+    {
+      "Price": 34.45,
+      "Qty": 2
+    },
+    {
+      "Price": 34.45,
+      "Qty": 4
+    }
+  ],
+  "Trilby hat": {
+    "Price": 21.67,
+    "Qty": 1
+  },
+  "Cloak": {
+    "Price": 107.99,
+    "Qty": 1
+  }
+}

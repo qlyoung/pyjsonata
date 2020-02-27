@@ -1,0 +1,7 @@
+#ifndef _JSONATA_H_
+
+const char jsonata_b64[] = "\
+__REPLACE_ME__ \
+";
+
+#endif /* _JSONATA_H_ */
