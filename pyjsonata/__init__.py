@@ -1,1 +1,1 @@
-import pyjsonata
+from .pyjsonata import jsonata, PyjsonataError

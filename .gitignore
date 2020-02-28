@@ -9,3 +9,4 @@ package-lock.json
 *.egg-info
 build
 dist
+npm-debug.log

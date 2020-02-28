@@ -5,7 +5,8 @@ import json
 
 from ctypes import c_char_p, byref, CDLL, POINTER
 
-TRANSLATE_SO_PATH = os.path.join(os.path.dirname(__file__), "jsonata.so")
+THIS_MODULE_DIR = os.path.dirname(__file__)
+TRANSLATE_SO_PATH = os.path.join(THIS_MODULE_DIR, [ x for x in os.listdir(THIS_MODULE_DIR) if x.endswith(".so") ][0])
 
 _clib_jsonata = CDLL(TRANSLATE_SO_PATH)
 

@@ -31,10 +31,14 @@ class JsonataBuildExt(build_ext):
         spawn(shlex.split(COMPILE_CMD))
         spawn(["cp", "jsonata-c/jsonata.so", ext_path])
 
+    def run(self):
+        build_ext.run(self)
+        self.copy_extensions_to_source()
+
 
 setup(
     name="pyjsonata", # Replace with your own username
-    version="0.0.1a1",
+    version="0.0.1a2",
     author="Quentin Young",
     author_email="qlyoung@qlyoung.net",
     description="Python bindings for JSONata",
@@ -49,8 +53,9 @@ setup(
     # Dummy extension to convince setuptools that we are impure
     python_requires='>=3.6',
     ext_modules = [
-        Extension("jsonata", sources=["jsonata-c/src/jsonata.c"])
+        Extension("pyjsonata.jsonata", sources=["jsonata-c/src/jsonata.c"])
     ],
+    package_data={"pyjsonata": ["*.so"]},
     cmdclass = {
         "build_ext": JsonataBuildExt,
     }
