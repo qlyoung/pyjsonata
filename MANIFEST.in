@@ -1,0 +1,6 @@
+include jsonata-c/src/*.c
+include jsonata-c/src/*.h
+include jsonata-c/src/*.template
+include jsonata-c/src/*.sh
+include jsonata-c/src/*.js
+exclude jsonata-c/src/jsonata.h
