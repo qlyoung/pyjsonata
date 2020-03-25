@@ -6,9 +6,7 @@ Python bindings for [JSONata](https://jsonata.org).
 ## Building
 
 Required build tools:
-* npm
-* clang
-* make
+* docker
 
 If you want to run tests:
 * pytest
@@ -18,14 +16,10 @@ If you want to run tests:
 
 Ready?
 
-- Install docker
 - From the repository root:
 
   ```
-  git submodule update --init --recursive
-  rm -rf dist build __pycache__ pyjsonata.egg-info
-  docker pull quay.io/pypa/manylinux2014_x86_64
-  docker run -it --mount type=bind,source=$(pwd),target=/src quay.io/pypa/manylinux2014_x86_64 /src/docker-build.sh
+  ./build.sh
   ```
 
 - If the stars have aligned, and it is Tuesday, you will now have a built
