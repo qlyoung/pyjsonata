@@ -10,7 +10,7 @@ from distutils.file_util import copy_file
 from distutils.spawn import spawn
 
 
-with open("README.md", "r") as fh:
+with open("README.rst", "r") as fh:
     long_description = fh.read()
 
 # try:
@@ -54,7 +54,7 @@ setup(
     author_email="qlyoung@qlyoung.net",
     description="Python bindings for JSONata",
     long_description=long_description,
-    long_description_content_type="text/markdown",
+    long_description_content_type="text/x-rst",
     url="https://github.com/qlyoung/pyjsonata",
     packages=["pyjsonata"],
     ext_modules=[
