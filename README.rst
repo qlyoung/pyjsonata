@@ -1,7 +1,17 @@
+Archived as of September 2024 because:
+
+1. I have not been maintaining it
+2. There is now a pure python implementation of Jsonata here: https://github.com/rayokota/jsonata-python
+
+Thanks to all users for the support.
+
+----
+
 pyjsonata
 =========
 
 Python bindings for `JSONata <https://jsonata.org>`_.
+
 
 Usage
 -----
